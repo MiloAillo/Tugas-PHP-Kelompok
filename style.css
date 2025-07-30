@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(232, 232, 232);
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: white;
+    width: 450px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
