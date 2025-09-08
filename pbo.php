@@ -15,14 +15,14 @@
                 public $color;
                 public $isAvailable;
 
-                public function __construct($brand, $model, $color, $isAvailable) {
+                public function __construct($brand, $model, $color, $isAvailable) {  // method 1: special method
                     $this->brand = $brand;
                     $this->model = $model;
                     $this->color = $color;
                     $this->isAvailable = $isAvailable;
                 }
 
-                public function Available() {
+                public function Available() {  // method 2: cek ketersediaan
                     if ($this->isAvailable == "true") {
                         return "<p class='available'>$this->brand $this->model is available</p>";
                     } elseif ($this->isAvailable == "false") {
@@ -32,7 +32,7 @@
                     }
                 }
 
-                public function getStatus() {
+                public function getStatus() { // method 3: lihat status
                     echo "<div class='container'>
                             <p class='status'>This is $this->brand $this->model with color $this->color </p>
                             ". $this->Available() 

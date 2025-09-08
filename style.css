@@ -1,22 +1,21 @@
-body {
-    background-color: rgb(232, 232, 232);
-}
-
-p {
+* {
     margin: 0;
     padding: 0;
 }
 
-.container {
-    background-color: white;
-    width: 450px;
-    padding: 10px;
-    box-sizing: border-box;
-    text-align: center;
+body {
+    background-color: rgb(232, 232, 232);
 }
 
-.main {
+.main-container {
     display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+}
+
+.info {
+    background-color: beige;
+    padding: 20px;
+    box-sizing: border-box;
 }
